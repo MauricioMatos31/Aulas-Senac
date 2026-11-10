@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuperação de Senha - Passo 1</title>
+  <link rel="stylesheet" href="recuperar-senha1.css">
+</head>
+<body>
+
+
+  <header class="steps-bar">
+    <div class="step active">
+      <div class="step-number">1</div>
+    </div>
+    <div class="step-line"></div>
+    <div class="step">
+      <div class="step-number">2</div>
+    </div>
+    <div class="step-line"></div>
+    <div class="step">
+      <div class="step-number">3</div>
+    </div>
+  </header>
+
+  
+  <main class="main-container">
+    <div class="card-container">
+      
+      
+      <div class="recovery-card">
+        
+    
+        <div class="alien-wrapper">
+          <div class="alien-glow"></div>
+         
+          <img src="alienchave.png" alt="Alien com Chave" class="alien-img">
+        </div>
+
+        <h2 class="card-title">INSIRA SEU E-MAIL CADASTRADO</h2>
+
+        <form onsubmit="event.preventDefault();" class="recovery-form">
+          <div class="input-group">
+            <span class="input-icon">
+      
+              <img src="alien email.png" alt="Alien Email Icon" class="icon-img">
+            </span>
+            <input type="email" placeholder="Insira seu email cadastrado" required>
+          </div>
+
+          <button type="submit" class="btn-primary">Solicitar código
+            
+          </button>
+
+          <a href="LUMA login.html" class="back-link">&lt; Voltar para o login</a>
+        </form>
+
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>

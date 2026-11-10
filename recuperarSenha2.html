@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuperação de Senha - Passo 1</title>
+  <link rel="stylesheet" href="recuperar-senha1.css">
+</head>
+<body>
+
+
+  <header class="steps-bar">
+    <div class="step active">
+      <div class="step-number">1</div>
+    </div>
+    <div class="step-line"></div>
+    <div class="step">
+      <div class="step-number">2</div>
+    </div>
+    <div class="step-line"></div>
+    <div class="step">
+      <div class="step-number">3</div>
+    </div>
+  </header>
+
+  
+  <main class="main-container">
+    <div class="card-container">
+      
+     <div class="recovery-card">
+  <!-- Alien Topo -->
+  <div class="alien-wrapper">
+    <div class="alien-glow"></div>
+    <img src="alienchave.png" alt="Alien Icon" class="alien-img">
+  </div>
+
+  <h2 class="card-title">INSIRA O CÓDIGO RECEBIDO</h2>
+
+  <form class="recovery-form" onsubmit="event.preventDefault();">
+    <!-- Quadrados do Código OTP -->
+    <div class="codigo-wrapper">
+      <input type="text" maxlength="1" class="codigo-input" autofocus>
+      <input type="text" maxlength="1" class="codigo-input">
+      <input type="text" maxlength="1" class="codigo-input">
+      
+      <span class="codigo-separador">-</span>
+      
+      <input type="text" maxlength="1" class="codigo-input">
+      <input type="text" maxlength="1" class="codigo-input">
+      <input type="text" maxlength="1" class="codigo-input">
+    </div>
+
+    <button type="submit" class="btn-primary">ENVIAR</button>
+  </form>
+
+  <a href="#" class="back-link">&lt; Reenviar código</a>
+</div>
+        </form>
+
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
