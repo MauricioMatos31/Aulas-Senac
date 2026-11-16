@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMA - Cadastre-se</title>
+  <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo-area">
+      <img src="../imagens/alien email.png" alt="Logo LUMA" class="logo-img">
+      <span class="logo-text">LUMA</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#">HOME</a>
+      <a href="#">PRODUTOS</a>
+      <a href="#">SUPORTE</a>
+      <a href="#">LOGIN</a>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <div class="register-card">
+      <div class="alien-top-wrapper">
+        <div class="alien-glow"></div>
+        <img src="../imagens/alien login.png" alt="Alien Topo" class="alien-top-img">
+      </div>
+
+      <h1 class="card-title">CADASTRE-SE</h1>
+
+      <div class="role-selector">
+        <button type="button" class="role-btn active" onclick="selecionarPerfil(this)">CLIENTE</button>
+        <button type="button" class="role-btn" onclick="selecionarPerfil(this)">VENDEDOR</button>
+      </div>
+
+      <form class="register-form">
+        <div class="input-pill">
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder="EMAIL" required>
+        </div>
+
+        <div class="input-pill">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" placeholder="SENHA" required>
+        </div>
+
+        <div class="input-pill">
+          <i class="fa-regular fa-id-card"></i>
+          <input type="text" placeholder="DOCUMENTO" required>
+        </div>
+
+        <div class="input-pill">
+          <i class="fa-solid fa-phone"></i>
+          <input type="tel" placeholder="TELEFONE" required>
+        </div>
+
+        <div class="input-pill">
+          <i class="fa-solid fa-earth-americas"></i>
+          <input type="text" placeholder="CEP" required>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="btn-cancel">CANCELAR</button>
+          <button type="submit" class="btn-submit">CADASTRAR</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #4a4a4a;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: #141414;
+  height: 90px;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #222222;
+  position: relative;
+  z-index: 10;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.logo-img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-family: 'Creepster', cursive;
+  font-size: 46px;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  font-family: 'Creepster', cursive;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #ce93d8;
+  text-shadow: 0 0 10px rgba(206, 147, 216, 0.6);
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 20px 40px 20px;
+  background: radial-gradient(circle at 50% 35%, rgba(255, 255, 255, 0.28) 0%, rgba(45, 45, 45, 0.45) 35%, #020202 72%);
+}
+
+.register-card {
+  position: relative;
+  background-color: #050505;
+  width: 100%;
+  max-width: 440px;
+  border-radius: 18px;
+  padding: 65px 40px 35px 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alien-top-wrapper {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alien-glow {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.1) 45%, rgba(0, 0, 0, 0) 70%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.alien-top-img {
+  width: 150%;
+  height: 115%;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+}
+
+.card-title {
+  font-family: 'Creepster', cursive;
+  font-size: 38px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 16px;
+  font-weight: normal;
+}
+
+.role-selector {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.role-btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+  border-radius: 25px;
+  padding: 7px 26px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.role-btn.active {
+  background-color: #7b2cbf;
+  border-color: #7b2cbf;
+  box-shadow: 0 0 14px rgba(123, 44, 191, 0.5);
+}
+
+.register-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-pill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  height: 36px;
+  padding: 0 16px;
+  border: 1.5px solid #ffffff;
+  border-radius: 25px;
+  background-color: transparent;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-pill:focus-within {
+  border-color: #ce93d8;
+  box-shadow: 0 0 10px rgba(206, 147, 216, 0.4);
+}
+
+.input-pill i {
+  color: #cccccc;
+  font-size: 14px;
+  width: 18px;
+  text-align: center;
+}
+
+.input-pill input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+}
+
+.input-pill input::placeholder {
+  color: #dcdcdc;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 12px;
+}
+
+.btn-cancel,
+.btn-submit {
+  border-radius: 25px;
+  padding: 6px 22px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-cancel {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+}
+
+.btn-cancel:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-submit {
+  background-color: #6a1b9a;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+}
+
+.btn-submit:hover {
+  background-color: #8e24aa;
+  box-shadow: 0 0 12px rgba(142, 36, 170, 0.6);
+}
