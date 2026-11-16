@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #4a4a4a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.steps-bar {
+  background-color: #2b2b2b;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 2px solid #000;
+  width: 100%;
+}
+
+.step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.step.active .step-number {
+  background-color: rgba(206, 147, 216, 0.25);
+  color: #e1bee7;
+  border: 2px solid #ce93d8;
+  box-shadow: 0 0 18px rgba(206, 147, 216, 0.5);
+}
+
+.step-line {
+  width: 100px;
+  height: 2px;
+  background-color: #777777;
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #666666 0%, #3a3a3a 70%);
+  padding: 40px 20px;
+}
+
+.card-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.recovery-card {
+  position: relative;
+  background-color: #000000;
+  width: 100%;
+  max-width: 520px;
+  min-height: 280px;
+  border-radius: 20px;
+  padding: 55px 40px 40px 40px;
+  box-shadow: 
+    0 0 50px rgba(255, 255, 255, 0.1), 
+    0 20px 40px rgba(0, 0, 0, 0.8),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.alien-wrapper {
+  position: absolute;
+  top: -85px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alien-glow {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.1) 40%, rgba(0,0,0,0) 70%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.alien-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 8px 18px rgba(255, 255, 255, 0.35));
+}
+
+.recovery-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.input-group input {
+  width: 100%;
+  height: 48px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  padding: 0 45px 0 20px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-group input::placeholder {
+  color: #666666;
+}
+
+.input-group .toggle-password {
+  position: absolute;
+  right: 18px;
+  color: #000000;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.input-group .toggle-password:hover {
+  opacity: 1;
+}
+
+.btn-primary {
+  background-color: #5c1885;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  width: auto;
+  min-width: 160px;
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(92, 24, 133, 0.3);
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  background-color: #7b1fa2;
+  box-shadow: 0 4px 15px rgba(123, 31, 162, 0.5);
+  transform: translateY(-1px);
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuperação de Senha</title>
+  <link rel="stylesheet" href="recuperarSenha3.css">
+</head>
+<body>
+
+  <header class="steps-bar">
+    <div class="step">
+      <div class="step-number">1</div>
+    </div>
+    
+    <div class="step-line"></div>
+    
+      <div class="step-number">2</div>
+    </div>
+    
+    <div class="step-line"></div>
+    
+    <div class="step">
+         <div class="step active">
+            <div class="step-number">3</div>
+         </div>
+      
+    </div>
+  </header>
+
+  <main class="main-container">
+    <div class="card-container">
+      <div class="recovery-card">
+        <div class="alien-wrapper">
+          <div class="alien-glow"></div>
+          <img src="alienchave.png" alt="Alien com Chave" class="alien-img">
+        </div>
+
+        <form class="recovery-form">
+          <div class="input-group">
+            <input type="password" id="nova-senha" placeholder="DIGITE SUA NOVA SENHA" required>
+            <i class="fa-regular fa-eye toggle-password" onclick="toggleVisibility('nova-senha', this)"></i>
+          </div>
+
+          <div class="input-group">
+            <input type="password" id="confirmar-senha" placeholder="CONFIRME SUA NOVA SENHA" required>
+            <i class="fa-regular fa-eye toggle-password" onclick="toggleVisibility('confirmar-senha', this)"></i>
+          </div>
+
+          <button type="submit" class="btn-primary">CONFIRMAR</button>
+        </form>
+      </div>
+    </div>
+  </main>    
+  </body>
+  </html>

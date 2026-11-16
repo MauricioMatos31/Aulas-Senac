@@ -145,29 +145,30 @@ body {
 }
 
 /* ÁREA DOS QUADRADOS DE CÓDIGO */
+/* ÁREA DOS QUADRADOS DE CÓDIGO */
 .codigo-wrapper {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 8px;
   width: 100%;
-  margin: 10px 0;
+  margin: 10px auto;
 }
 
 .codigo-input {
-  width: 44px;
+  width: 42px;
   height: 56px;
+  padding: 0;
+  box-sizing: border-box;
   background-color: #ffffff;
   border: 2px solid transparent;
-  border-radius: 10px;
+  border-radius: 6px;
   color: #000000;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
   outline: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease;
 }
 
 .codigo-input:focus {
@@ -177,10 +178,12 @@ body {
 }
 
 .codigo-separador {
-  color: #ffffff;
-  font-size: 28px;
-  font-weight: bold;
-  margin: 0 2px;
+  display: block;
+  width: 18px;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 99px;
+  flex-shrink: 0;
 }
 
 /* BOTÃO ENVIAR */
