@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMA - Página Inicial</title>
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+
+  <header class="top-header">
+    <div class="header-row-top">
+      <a href="#" class="logo-box">
+        <img src="https://via.placeholder.com/40" alt="Logo LUMA" class="logo-alien">
+        <span class="logo-name">LUMA</span>
+      </a>
+
+      <div class="search-center">
+        <div class="search-bar">
+          <input type="text" id="campo-busca" placeholder="PESQUISE AQUI">
+          <button type="button" id="btn-busca"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <nav class="sub-nav">
+          <a href="#">CATEGORIAS</a>
+          <a href="#">PROMOÇÕES</a>
+          <a href="#">HISTORICO</a>
+          <a href="#">CONTATO</a>
+        </nav>
+      </div>
+
+      <div class="header-spacer"></div>
+    </div>
+
+    <div class="header-row-bottom">
+      <div class="location-info">
+        <i class="fa-solid fa-earth-americas"></i>
+        <span>ENVIAR PARA MAURICIO</span>
+      </div>
+
+      <div class="user-actions">
+        <a href="#" class="user-profile">
+          <img src="https://via.placeholder.com/24" alt="Avatar" class="mini-alien">
+          <span>Mauricio</span>
+        </a>
+        <span class="divider">|</span>
+        <a href="vender.html" class="action-link">Vender</a>
+        <a href="#" class="action-link">Ajuda</a>
+        <a href="#" class="cart-link">
+          <i class="fa-solid fa-cart-plus"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <section class="banner-section">
+      <img src="../imagens/teclados.jpg" alt="Banner Teclados e Periféricos" class="hero-banner">
+    </section>
+
+    <section class="products-section">
+      <h1 class="section-title">CONFIRA NOSSAS NOVIDADES</h1>
+
+      <div class="products-grid" id="vitrine-produtos">
+        <article class="product-card">
+          <div class="product-img-box">
+            <img src="https://via.placeholder.com/200x160?text=Teclado+Rosa" alt="Teclado Mecânico Sem Fio AULA Hero S75pro">
+          </div>
+          <div class="product-info">
+            <p class="product-name">Teclado Mecânico Sem Fio AULA Hero S75pro</p>
+            <p class="product-price">R$ 276,99</p>
+            <div class="product-rating">
+              <i class="fa-solid fa-star star-filled"></i>
+              <i class="fa-solid fa-star star-filled"></i>
+              <i class="fa-solid fa-star star-filled"></i>
+              <i class="fa-solid fa-star star-filled"></i>
+              <i class="fa-solid fa-star star-empty"></i>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/home.js"></script>
+</body>
+</html>
